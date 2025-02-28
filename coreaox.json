@@ -6,53 +6,57 @@
 			"uploadDate":"2025/2/27",
 			"fileSize":"1.1 GB"},
 {
-        "title":"Cuphead DODI [repack] ",
-        "uris":["https://qiwi.gg/file/8Hg35679-CupheadDODIRepack"],
-        "uploadDate":"2025/2/27",
-        "fileSize":"5.0 GB"},
+            "title":"Cuphead DODI [repack] ",
+            "uris":["https://qiwi.gg/file/8Hg35679-CupheadDODIRepack"],
+            "uploadDate":"2025/2/27",
+            "fileSize":"5.0 GB"},
         {
-        "title":"life Is Strange Remaster [repack]",
-        "uris":["https://qiwi.gg/file/6FYp8352-LifeisStrangeBeforetheStormRemasteredDODIRepack"],
-        "uploadDate":"2025/2/27",
-
-        "fileSize":"13.0 GB"},
+             "title":"life Is Strange Remaster [repack]",
+            "uris":["https://qiwi.gg/file/6FYp8352-LifeisStrangeBeforetheStormRemasteredDODIRepack"],
+            "uploadDate":"2025/2/27",            "fileSize":"13.0 GB"},
 
         {
-        "title":"far cry 3 complete collection [repack]",
-        "uris":["https://qiwi.gg/file/em374943-FarCry3CompleteCollection-DODIRepack"],
-        "uploadDate":"2025/2/27",
-        "fileSize":"6.51 GB"},
+            "title":"far cry 3 complete collection [repack]",
+            "uris":["https://qiwi.gg/file/em374943-FarCry3CompleteCollection-DODIRepack"],
+            "uploadDate":"2025/2/27",
+            "fileSize":"6.51 GB"},
         {
-        "title":"Euro Truck Simulator 2 DODI[repack]",
-        "uris":["https://qiwi.gg/file/9Tra8803-EuroTruckSimulator2DODIRepack"],
-        "uploadDate":"2025/2/27",
-        "fileSize":"14.03 GB"},
+            "title":"Euro Truck Simulator 2 DODI[repack]",
+            "uris":["https://qiwi.gg/file/9Tra8803-EuroTruckSimulator2DODIRepack"],
+            "uploadDate":"2025/2/27",
+            "fileSize":"14.03 GB"},
         {
             "title":"Dragon Ball Sparking ZERO [repack]",
             "uris":["https://qiwi.gg/file/ch240794-DragonBallSparkingZERODODIRepack"],
             "uploadDate":"2025/2/27",
             "fileSize":"19.03 GB"},
        {
-		"title":"Doki Doki Literature Club Plus! [repack]",
-                "uris":["https://store10.gofile.io/download/web/9210fe23-6dc8-4146-b1f8-4b0e8396f7f3/Doki%20Doki%20Literature%20Club%20Plus!%20%5BFitGirl%20Repack%5D.rar"],
-                "uploadDate":"2025/2/27",
-                "fileSize":"459 Mb"},
+		    "title":"Doki Doki Literature Club Plus! [repack]",
+            "uris":["https://store10.gofile.io/download/web/9210fe23-6dc8-4146-b1f8-4b0e8396f7f3/Doki%20Doki%20Literature%20Club%20Plus!%20%5BFitGirl%20Repack%5D.rar"],
+            "uploadDate":"2025/2/27",
+            "fileSize":"459 Mb"},
 
 
-            {    "title":"raft [repack]",
-                "uris":["https://qiwi.gg/file/rDDB3010-RaftDODIRepack"],
-                "uploadDate":"2025/2/27",
-                "fileSize":"2.0 GB"},
-	
-	
-	{       "title":"car of sale ",
-                "uris":["https://qiwi.gg/file/mwzN6720-Car"],
-                "uploadDate":"2025/2/27",
-                "fileSize":"4.0 GB"},
+     {      "title":"raft [repack]",
+            "uris":["https://qiwi.gg/file/rDDB3010-RaftDODIRepack"],
+            "uploadDate":"2025/2/27",
+            "fileSize":"2.0 GB"},
+        	
+	{     "title":"car of sale ",
+          "uris":["https://qiwi.gg/file/mwzN6720-Car"],
+          "uploadDate":"2025/2/27",
+          "fileSize":"4.0 GB"},
 	
 	{       "title":"Red Dead Redemption DODI [REPACK] ",
-                "uris":["https://qiwi.gg/file/jXaH6498-RedDeadRedemptionDODIRepack"],
-                "uploadDate":"2025/2/27",
-                "fileSize":"8.10 GB"}
-        ]   
+            "uris":["https://qiwi.gg/file/jXaH6498-RedDeadRedemptionDODIRepack"],
+            "uploadDate":"2025/2/27",
+            "fileSize":"8.10 GB"},
+    {   
+        "title":" Dark Souls Remastered DODI [REPACK] ",
+        "uris":["https://qiwi.gg/file/q1CG2429-DarkSoulsRemastered-DODIRepack"],
+        "uploadDate":"2025/2/27",
+        "fileSize":"8.10 GB"}
+       ]
+      
+
 }
