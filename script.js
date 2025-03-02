@@ -49,4 +49,7 @@ document.getElementById("copiarLink").addEventListener("click", function() {
     document.body.removeChild(tempInput);
     
     alert("Link da fonte copiado com sucesso! Agora, você pode adicioná-lo no Hydra.");
+    
+    // Abre o link do Hydra automaticamente
+    window.open(linkFonte, "_blank");
 });
