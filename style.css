@@ -1,29 +1,64 @@
+/* Definindo o fundo do site como cinza */
 body {
+    background-color: #3b3b3b; /* Cinza claro */
+    color: #333; /* Cor do texto em cinza escuro para contraste */
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
+/* Estilizando o cabeçalho */
 header {
-    background-color: #007bff;
-    color: white;
+    background-color: #333; /* Fundo escuro */
+    color: #fff; /* Cor do texto */
     padding: 20px;
-    border-radius: 5px;
+    text-align: center;
 }
 
+/* Estilizando a seção de 'Sobre' */
+section#sobre {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff; /* Fundo branco para destacar */
+    border-radius: 8px;
+}
+
+/* Estilizando os botões */
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: #007bff;
+    background-color: #4CAF50; /* Cor de fundo verde */
     color: white;
+    padding: 10px 20px;
+    margin: 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
+/* Efeito para botões */
 button:hover {
-    background-color: #0056b3;
+    background-color: #45a049; /* Cor um pouco mais escura quando passar o mouse */
+}
+
+/* Estilizando o formulário de solicitação */
+#formularioPedido {
+    background-color: #fff; /* Fundo branco */
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Inputs do formulário */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Para o formulário não ficar tão grande */
+h2 {
+    margin-bottom: 20px;
 }
