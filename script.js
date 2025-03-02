@@ -24,7 +24,9 @@ document.getElementById("enviarPedido").addEventListener("click", function() {
     })
     .then(response => response.json())
     .then(data => {
-        alert(data.message || "Pedido enviado com sucesso!");
+        if (data.message) {
+            alert(data.message || "Pedido enviado com sucesso!");
+        }
     })
     .catch(error => {
         console.error("Erro ao enviar pedido:", error);
@@ -36,20 +38,14 @@ document.getElementById("enviarPedido").addEventListener("click", function() {
 document.getElementById("copiarLink").addEventListener("click", function() {
     const linkFonte = "https://coreaox.github.io/coreaox.json";  // Link para o GitHub Pages
 
-    // Cria um campo de texto temporário para copiar o link
-    const tempInput = document.createElement("input");
-    tempInput.value = linkFonte;
-    document.body.appendChild(tempInput);
-    
-    // Seleciona o texto do campo temporário e copia
-    tempInput.select();
-    document.execCommand("copy");
-    
-    // Remove o campo temporário
-    document.body.removeChild(tempInput);
-    
-    alert("Link da fonte copiado com sucesso! Agora, você pode adicioná-lo no Hydra.");
-    
+    // Usar a API Clipboard para copiar o link (recomendado)
+    navigator.clipboard.writeText(linkFonte).then(function() {
+        alert("Link da fonte copiado com sucesso! Agora, você pode adicioná-lo no Hydra.");
+    }).catch(function(error) {
+        console.error("Erro ao copiar o link:", error);
+        alert("Houve um erro ao tentar copiar o link.");
+    });
+
     // Abre o link do Hydra automaticamente
     window.open(linkFonte, "_blank");
 });
