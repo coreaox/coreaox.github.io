@@ -34,7 +34,7 @@ document.getElementById("enviarPedido").addEventListener("click", function() {
 
 // Função para copiar o link da fonte para a área de transferência
 document.getElementById("copiarLink").addEventListener("click", function() {
-    const linkFonte = "https://coreaox.github.io/";  // Link para o GitHub Pages
+    const linkFonte = "https://coreaox.github.io/coreaox.json";  // Link para o GitHub Pages
 
     // Cria um campo de texto temporário para copiar o link
     const tempInput = document.createElement("input");
