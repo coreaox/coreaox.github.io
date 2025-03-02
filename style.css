@@ -31,6 +31,15 @@ section#sobre {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Centralizar os botões na tela */
+.container-botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa a tela inteira */
+}
+
 /* Estilizando os botões */
 button {
     background-color: var(--color-button-bg);
