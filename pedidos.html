@@ -8,11 +8,25 @@
         body { font-family: Arial, sans-serif; background-color: #121212; color: white; text-align: center; }
         ul { list-style: none; padding: 0; }
         li { background: #333; padding: 10px; margin: 5px; border-radius: 5px; }
+        button { 
+            background-color: #4CAF50; 
+            color: white; 
+            padding: 10px 20px; 
+            margin: 20px;
+            border: none;
+            border-radius: 5px; 
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover { background-color: #45a049; }
     </style>
 </head>
 <body>
     <h2>📋 Lista de Pedidos</h2>
     <ul id="listaPedidos">Carregando...</ul>
+
+    <!-- ✅ Botão "Pedidos" adicionado -->
+    <button id="pedidos">📋 Pedidos</button>
 
     <script>
         const repo = "coreaox/pedidos";  // 🔴 Substitua pelo seu repositório
@@ -27,6 +41,11 @@
             .catch(error => {
                 document.getElementById("listaPedidos").innerHTML = "Erro ao carregar pedidos!";
             });
+
+        // ✅ Função do botão "Pedidos" (pode ser alterada para qualquer ação desejada)
+        document.getElementById("pedidos").addEventListener("click", function() {
+            alert("O botão 'Pedidos' foi clicado!");
+        });
     </script>
 </body>
 </html>
