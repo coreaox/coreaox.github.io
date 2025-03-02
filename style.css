@@ -1,29 +1,82 @@
+:root {
+    --color-bg: #3b3b3b; /* Fundo cinza claro */
+    --color-text: #333; /* Texto em cinza escuro */
+    --color-button-bg: #4CAF50; /* Verde do botão */
+    --color-button-hover-bg: #45a049; /* Verde escuro para hover */
+    --color-white: #fff; /* Branco */
+}
+
 body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
     font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
+/* Estilizando o cabeçalho */
 header {
-    background-color: #007bff;
-    color: white;
+    background-color: #333;
+    color: var(--color-white);
     padding: 20px;
-    border-radius: 5px;
+    text-align: center;
 }
 
+/* Estilizando a seção 'Sobre' */
+section#sobre {
+    padding: 20px;
+    margin: 20px;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando os botões */
 button {
+    background-color: var(--color-button-bg);
+    color: var(--color-white);
     padding: 10px 20px;
-    font-size: 16px;
-    margin-top: 20px;
-    cursor: pointer;
-    background-color: #007bff;
-    color: white;
+    margin: 10px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: var(--color-button-hover-bg);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilizando o formulário de solicitação */
+#formularioPedido {
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs do formulário */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+}
+
+/* Para o formulário não ficar tão grande */
+h2 {
+    margin-bottom: 20px;
 }
