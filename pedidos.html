@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedidos de Jogos</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #121212; color: white; text-align: center; }
+        ul { list-style: none; padding: 0; }
+        li { background: #333; padding: 10px; margin: 5px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h2>📋 Lista de Pedidos</h2>
+    <ul id="listaPedidos">Carregando...</ul>
+
+    <script>
+        const repo = "coreaox/pedidos";  // 🔴 Substitua pelo seu repositório
+        const apiUrl = `https://api.github.com/repos/${repo}/issues`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                let pedidos = data.map(issue => issue.title.replace("Pedido de ", "")).sort(); // 🔵 Ordena A-Z
+                document.getElementById("listaPedidos").innerHTML = pedidos.map(jogo => `<li>${jogo}</li>`).join("");
+            })
+            .catch(error => {
+                document.getElementById("listaPedidos").innerHTML = "Erro ao carregar pedidos!";
+            });
+    </script>
+</body>
+</html>
