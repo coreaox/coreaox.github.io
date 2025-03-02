@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonte Coreaox</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Fonte Coreaox</h1>
+    </header>
+
+    <section id="sobre">
+        <p>
+            Eu criei esta fonte com o intuito de ajudar a comunidade a ter um acesso facilitado a jogos no launcher do Hydra, fornecendo versões pré-instaladas desses mesmos jogos.  
+            Aceito pedidos de jogos para adicionar à fonte, então, se quiser solicitar um, preencha o formulário abaixo.
+        </p>
+        <p><strong>Por favor, peça apenas jogos das repacks <span style="color: red;">Dodi</span>, <span style="color: red;">FitGirl</span> ou <span style="color: red;">Online.Fix</span>.</strong></p>
+    </section>
+
+    <button id="mostrarFormulario">Pedir um Jogo</button>
+    
+    <div id="formularioPedido" style="display: none;">
+        <h2>Solicitação de Jogo</h2>
+        <label for="nomeHydra">Seu nome no Hydra Community:</label>
+        <input type="text" id="nomeHydra" placeholder="Digite seu nome" required>
+
+        <label for="nomeJogo">Nome do jogo:</label>
+        <input type="text" id="nomeJogo" placeholder="Ex: Cyberpunk 2077 (Dodi)" required>
+
+        <button id="enviarPedido">Enviar Pedido</button>
+    </div>
+
+    <button id="copiarLink">Copiar Link da Fonte</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
