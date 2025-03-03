@@ -19,22 +19,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 return;
             }
 
-            const repo = "coreaox/pedidos";  // Seu repositório no GitHub
-            const apiUrl = `https://api.github.com/repos/${repo}/issues`;
+            const apiUrl = "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"; // 🔒 Chame um backend seguro
 
             try {
                 const response = await fetch(apiUrl, {
                     method: "POST",
                     headers: {
-                        "Authorization": `Bearer SEU_GITHUB_TOKEN_AQUI`,  // ⚠️ Não exponha publicamente!
-                        "Accept": "application/vnd.github.v3+json",
+                        "Accept": "application/json",
                         "Content-Type": "application/json"
                     },
-                    body: JSON.stringify({
-                        title: `Pedido de ${nome}`,
-                        body: `Usuário: ${nome}\nJogo: ${jogo}`,
-                        labels: ["pedido"]
-                    })
+                    body: JSON.stringify({ nome, jogo })
                 });
 
                 const data = await response.json();
