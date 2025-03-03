@@ -14,29 +14,23 @@
     <section id="sobre">
         <p>
             Eu criei esta fonte com o intuito de ajudar a comunidade a ter um acesso facilitado a jogos no launcher do Hydra. 
-            Aceito pedidos de jogos para adicionar à fonte, então, se quiser solicitar um, preencha o formulário abaixo.
+            Aceito pedidos de jogos para adicionar à fonte, então, se quiser solicitar um, clique no botão abaixo.
         </p>
         <p><strong>Por favor, peça apenas jogos das repacks <span style="color: red;">Dodi</span>, <span style="color: red;">FitGirl</span> ou <span style="color: red;">Online.Fix</span>.</strong></p>
     </section>
 
     <!-- Botão "Pedidos" que redireciona para pedidos.html -->
-    <a href="pedidos.html" class="pedido-btn">Pedidos</a>
-
-    <button id="mostrarFormulario">Pedir um Jogo</button>
-    
-    <div id="formularioPedido" style="display: none;">
-        <h2>Solicitação de Jogo</h2>
-        <label for="nomeHydra">Seu nome no Hydra Community:</label>
-        <input type="text" id="nomeHydra" placeholder="Digite seu nome" required>
-
-        <label for="nomeJogo">Nome do jogo:</label>
-        <input type="text" id="nomeJogo" placeholder="Ex: Cyberpunk 2077 (Dodi)" required>
-
-        <button id="enviarPedido">Enviar Pedido</button>
-    </div>
+    <a href="pedidos.html" class="pedido-btn">Fazer um Pedido</a>
 
     <button id="copiarLink">Copiar Link da Fonte</button>
 
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("copiarLink").addEventListener("click", function () {
+            const link = "https://coreaox.github.io/coreaox.json"; // Corrigido para copiar o link correto
+            navigator.clipboard.writeText(link).then(() => {
+                alert("✅ Link copiado com sucesso!\n\nAgora, abra o **Hydra Launcher** e cole o link para adicionar a fonte.");
+            }).catch(err => console.error("Erro ao copiar o link:", err));
+        });
+    </script>
 </body>
 </html>
