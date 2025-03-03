@@ -18,26 +18,55 @@ app.post("/enviar-pedido", (req, res) => {
         return res.status(400).json({ error: "Nome e jogo são obrigatórios!" });
     }
 
-    // Criar o nome do arquivo (exemplo: pedido-joao121.txt)
-    const fileName = `pedido-${nomeHydra}.txt`;
-    const filePath = `./pedidos/${fileName}`;
-
-    // Criar a pasta se não existir
-    if (!fs.existsSync("./pedidos")) {
-        fs.mkdirSync("./pedidos");
+    // Criar a pasta de pedidos se não existir
+    const pedidosDir = "./pedidos-hydra";
+    if (!fs.existsSync(pedidosDir)) {
+        fs.mkdirSync(pedidosDir);
     }
+
+    // Nome do arquivo para o pedido, com base no nome do jogo
+    const fileName = `${nomeJogo}.txt`;
+    const filePath = `${pedidosDir}/${fileName}`;
 
     // Conteúdo do pedido
     const content = `Nome no Hydra Community: ${nomeHydra}\nJogo Pedido: ${nomeJogo}\n\n`;
 
-    // Salvar o arquivo
+    // Salvar o pedido no arquivo correspondente
     fs.writeFile(filePath, content, (err) => {
         if (err) {
             return res.status(500).json({ error: "Erro ao salvar o pedido!" });
         }
-        res.json({ message: `Pedido salvo como ${fileName}` });
+
+        // Organizar os arquivos em ordem alfabética (opcional)
+        organizarPedidosEmOrdem(pedidosDir);
+
+        res.json({ message: `Pedido para ${nomeJogo} salvo com sucesso!` });
     });
 });
+
+// Função para organizar os arquivos na pasta de pedidos em ordem alfabética
+function organizarPedidosEmOrdem(dir) {
+    fs.readdir(dir, (err, files) => {
+        if (err) {
+            console.error("Erro ao ler o diretório:", err);
+            return;
+        }
+
+        // Ordenar os arquivos pelo nome
+        files.sort();
+
+        // Renomear os arquivos para garantir que estão em ordem alfabética
+        files.forEach((file, index) => {
+            const oldPath = `${dir}/${file}`;
+            const newPath = `${dir}/${index + 1}-${file}`;
+            fs.rename(oldPath, newPath, (err) => {
+                if (err) {
+                    console.error("Erro ao renomear o arquivo:", err);
+                }
+            });
+        });
+    });
+}
 
 // Iniciar o servidor
 const PORT = 3000;

@@ -20,6 +20,7 @@ header {
     color: var(--color-white);
     padding: 20px;
     text-align: center;
+    position: relative; /* Garante que os elementos dentro do header se posicionem corretamente */
 }
 
 /* Estilizando a seção 'Sobre' */
@@ -59,33 +60,4 @@ button:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilizando o formulário de solicitação */
-#formularioPedido {
-    background-color: var(--color-white);
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Inputs do formulário */
-input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-input[type="text"]:focus {
-    border-color: #4CAF50;
-    outline: none;
-    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
-}
-
-/* Para o formulário não ficar tão grande */
-h2 {
-    margin-bottom: 20px;
-}
+/* Estilizando o
