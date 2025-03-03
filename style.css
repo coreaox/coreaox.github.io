@@ -60,4 +60,10 @@ button:hover {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Estilizando o
+/* Estilizando os rótulos para ficarem visíveis no fundo escuro */
+label {
+    color: var(--color-white); /* Define a cor dos rótulos como branco */
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
