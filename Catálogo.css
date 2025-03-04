@@ -1,0 +1,139 @@
+/* Resetando estilos básicos */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Preto, mas não tão escuro */
+    color: white;
+    padding: 0;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-item {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Menu - Ao passar o mouse */
+.menu-content {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border-radius: 8px;
+}
+
+.menu-link {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-link:hover {
+    background-color: #444;
+}
+
+/* Catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: center;
+}
+
+.serie-item {
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+    transition: transform 0.3s ease; /* Efeito de transição ao passar o mouse */
+}
+
+.serie-item:hover {
+    transform: scale(1.05); /* Aumenta um pouco a série ao passar o mouse */
+}
+
+.serie-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.serie-item p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: white;
+}
+
+.assistir-btn {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.assistir-btn:hover {
+    background-color: #1a73e8;
+}
+
+/* Página de Episódio */
+.episodio-container {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.episodio-titulo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.proximo-btn {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.proximo-btn:hover {
+    background-color: #27a745;
+}
+
+.temporada-btn {
+    background-color: #555;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+}
+
+.temporada-btn:hover {
+    background-color: #777;
+  }

@@ -1,0 +1,49 @@
+/* Estilos Básicos do Site */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212; /* Preto, mas não tão escuro */
+    color: white;
+    padding: 0;
+}
+
+/* Menu */
+.menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+.menu-item {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Catálogo */
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.serie-item {
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    background-color: #333;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* Episódios */
+.episodio-container {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    margin-top: 20px;
+}

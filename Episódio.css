@@ -1,0 +1,19 @@
+// Exemplo de episódios e temporadas
+const episodios = {
+    "A Guerra dos Tronos": {
+        temporadas: {
+            1: [
+                { titulo: "Episódio 1: O Inverno Chegou", descricao: "Descrição do episódio 1 da temporada 1." },
+                { titulo: "Episódio 2: O Rei da Noite", descricao: "Descrição do episódio 2 da temporada 1." }
+            ],
+            2: [
+                { titulo: "Episódio 1: A Morte do Rei", descricao: "Descrição do episódio 1 da temporada 2." },
+                { titulo: "Episódio 2: O Encontro dos Dragões", descricao: "Descrição do episódio 2 da temporada 2." }
+            ]
+        }
+    },
+    "Breaking Bad": {
+        temporadas: {
+            1: [
+                { titulo: "Episódio 1: Pilot", descricao: "Descrição do episódio 1 da temporada 1." },
+                { titulo: "Episódio 2: Cat

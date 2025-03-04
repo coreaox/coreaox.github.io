@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Séries</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menu de navegação -->
+    <div id="menu">
+        <div class="menu-item" onclick="toggleMenu()">|||</div>
+        <div id="menu-content" class="menu-content">
+            <a href="#" class="menu-link">Séries</a>
+            <a href="#" class="menu-link">Filmes</a>
+            <a href="#" class="menu-link">Animes</a>
+            <a href="#" class="menu-link">Desenhos</a>
+        </div>
+    </div>
+
+    <!-- Catálogo de Séries -->
+    <div class="catalogo">
+        <div class="serie-item" id="A">
+            <img src="serie1.jpg" alt="A Guerra dos Tronos">
+            <p>A Guerra dos Tronos</p>
+            <a href="#" class="assistir-btn" onclick="abrirSerie('A Guerra dos Tronos')">Assistir</a>
+        </div>
+        <div class="serie-item" id="B">
+            <img src="serie2.jpg" alt="Breaking Bad">
+            <p>Breaking Bad</p>
+            <a href="#" class="assistir-btn" onclick="abrirSerie('Breaking Bad')">Assistir</a>
+        </div>
+        <!-- Adicione mais séries aqui -->
+    </div>
+
+    <!-- Página de Episódio -->
+    <div id="episodio-container" class="episodio-container" style="display:none;">
+        <div id="episodio-titulo" class="episodio-titulo"></div>
+        <div id="episodio-descricao"></div>
+        <a id="proximo-btn" class="proximo-btn" href="#">Próximo Episódio</a>
+        <a id="temporada-btn" class="temporada-btn" href="#">Temporada Atual</a> <!-- Botão de Temporada -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
