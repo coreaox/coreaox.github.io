@@ -158,5 +158,30 @@
                     "uris":["https://gofile.io/d/y7ObnR"],
                     "uploadDate":"2025/2/27",
                     "fileSize":"28.7 GB"}
+     {               
+                    "title": "Red Dead Redemption 2",
+                    "uris":["https://gofile.io/d/OYh1ER"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"113.60 GB"},
+     {                
+                    "title": "UNCHARTED: Legacy of Thieves Collection ",
+                    "uris":["https://gofile.io/d/BGXnaB"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"78.0 GB"},
+     {                
+                    "title": "Hogwarts Legacy Deluxe Edition",
+                    "uris":["https://gofile.io/d/BGXnaB"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"72.37 GB"},
+     {                
+                    "title": "Forza Horizon 5 Premium Edition",
+                    "uris":["https://gofile.io/d/jJvfBU"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"72.37 GB"},
+     {                
+                    "title": "Dying Light 2 Stay Human ",
+                    "uris":["https://gofile.io/d/JIcp6n"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"58.5 GB"},
         ]  
 }
