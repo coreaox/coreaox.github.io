@@ -132,16 +132,31 @@
                    "title":"The Last of Us: Part I",
                     "uris":["https://gofile.io/d/1UggyR"],
                     "uploadDate":"2025/2/27",
-                    "fileSize":" 79.1"},
+                    "fileSize":" 79.1 GB"},
      {	   
                    "title":"Resident Evil 4",
                     "uris":["https://gofile.io/d/vLe5ze"],
                     "uploadDate":"2025/2/27",
-                    "fileSize":"61.6"},
+                    "fileSize":"61.6 GB"},
      {              
-                     "title": "The Elder Scrolls V: Skyrim"
+                    "title": "The Elder Scrolls V: Skyrim"
                     "uris":["https://gofile.io/d/t9XSxr"],
                     "uploadDate":"2025/2/27",
-                    "fileSize":"13"}
+                    "fileSize":"13 GB"},
+     {              
+                     "title": "Hellblade: Senua’s Sacrifice"
+                    "uris":["https://gofile.io/d/2biFwc"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"12.4 GB"},
+     {              
+                     "title": "Labyrinthine"
+                    "uris":["https://gofile.io/d/2biFwc"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"11.1 GB"},
+     {              
+                     "title": "Assassin’s Creed III Remastered"
+                    "uris":["https://gofile.io/d/y7ObnR"],
+                    "uploadDate":"2025/2/27",
+                    "fileSize":"28.7 GB"}
         ]  
 }
